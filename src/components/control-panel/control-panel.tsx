@@ -62,7 +62,7 @@ export function ControlPanel({
           </Tippy>
         </div>
       </div>{" "}
-      <a className="link" href="https://github.com/GSingh2432002" target="_blank">
+      <a className="link" href="https://github.com/VineetPaun/SketchFlow" target="_blank">
         <FiGithub />
       </a>
     </>
