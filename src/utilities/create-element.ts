@@ -20,6 +20,16 @@ export const createElement = (
           : generator.rectangle(x1, y1, x2 - x1, y2 - y1);
       return { id, x1, y1, x2, y2, type, roughElement };
     }
+    case Tools.circle: {
+      // Calculate width and height
+      const width = x2 - x1;
+      const height = y2 - y1;
+      // Calculate center and radius for the ellipse
+      const centerX = x1 + width / 2;
+      const centerY = y1 + height / 2;
+      const roughElement = generator.ellipse(centerX, centerY, width, height);
+      return { id, x1, y1, x2, y2, type, roughElement };
+    }
     case Tools.pencil: {
       const defaultRoughElement = null;
       return {

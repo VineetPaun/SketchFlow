@@ -137,7 +137,8 @@ export default function App() {
     const elementsCopy = [...elements];
     switch (type) {
       case Tools.line:
-      case Tools.rectangle: {
+      case Tools.rectangle:
+      case Tools.circle: { // Add this case
         elementsCopy[id] = createElement(id, x1, y1, x2, y2, type);
         break;
       }

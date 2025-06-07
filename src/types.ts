@@ -42,6 +42,7 @@ export type SelectedElementType = ElementType & {
     line: "line",
     pencil: "pencil",
     text: "text",
+    circle: "circle", // Add this line
   };
   
   export type ToolsType = (typeof Tools)[keyof typeof Tools];

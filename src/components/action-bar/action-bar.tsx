@@ -1,7 +1,7 @@
 import { Tools, ToolsType } from "../../types";
 
 import { LuPencil } from "react-icons/lu";
-import { FiMinus, FiMousePointer, FiSquare } from "react-icons/fi";
+import { FiMinus, FiMousePointer, FiSquare, FiCircle } from "react-icons/fi"; // Import FiCircle
 import { IoHandRightOutline, IoText } from "react-icons/io5";
 import "./action-bar-style.css";
 
@@ -33,6 +33,7 @@ export function ActionBar({ tool, setTool }: ActionBarProps) {
           {t === "line" && <FiMinus />}
           {t === "pencil" && <LuPencil />}
           {t === "text" && <IoText />}
+          {t === "circle" && <FiCircle />} {/* Add this line */}
           <span>{index + 1}</span>
         </div>
       ))}

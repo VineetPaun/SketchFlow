@@ -11,6 +11,7 @@ export const drawElement = (
   switch (element.type) {
     case "line":
     case "rectangle":
+    case "circle": // Add this case
       roughCanvas.draw(element.roughElement);
       break;
     case "pencil": {
